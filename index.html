@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+     
+    <header>
+        <h1>Shopping Cart Example</h1>
+        <div class="cart">
+            <button onclick="viewCart()">Cart (<span id="cart-count">0</span>)</button>
+        </div>
+    </header>
+
+
+    <section class="product-gallery">
+        <div class="product" data-name="Product 1" data-price="29.99">
+            <img src="images/mk7.png" alt="Product 1">
+            <h2>Product 1</h2>
+            <p>$29.99</p>
+            <button onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        <div class="product" data-name="Product 2" data-price="39.99">
+            <img src="images/mk8.png" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>$39.99</p>
+            <button onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        <div class="product" data-name="Product 3" data-price="49.99">
+            <img src="images/mk9.png" alt="Product 3">
+            <h2>Product 3</h2>
+            <p>$49.99</p>
+            <button onclick="addToCart(this)">Add to Cart</button>
+        </div>
+    </section>
+
+    
+    
+    
+    <section class="cart-view" id="cart-view">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
